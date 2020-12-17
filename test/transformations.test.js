@@ -105,12 +105,10 @@ describe('Transformations', () => {
     const expectedResponse = {
       data: {
         Id: '007',
-        Name: 'Joe Doe',
         FirstName: 'Joe',
         LastName: 'Doe',
         Title: 'Dr.',
         Salutation: 'Mr.',
-        PhotoUrl: 'someUrl',
         // Department: 'Technical',
         // AccountId: '1',
         // AccountName: 'Account 1',
