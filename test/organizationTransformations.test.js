@@ -227,7 +227,16 @@ describe('Organization transformations', () => {
           country: '',
           description: 'Some site',
         }],
-        relations: [],
+        relations: [
+          {
+            type: 'OrganizationToOrganization',
+            label: 'Parent Company',
+            partner: {
+              name: 'Umbrella Corp.',
+            },
+            uids: ['accountNumber', 'Umbrella Corp.'],
+          },
+        ],
       },
       metadata: { recordUid: 'accountNumber' },
     };

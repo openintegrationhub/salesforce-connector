@@ -24,7 +24,13 @@
       "title": "Fetch Organizaton Contacts",
       "description": "Get Salesforce organization (account) contacts",
       "type": "polling",
-      "main": "./lib/triggers/getContacts.js"
+      "main": "./lib/triggers/getOrganizations.js"
+    },
+    "getOrganizationsAndContacts": {
+      "title": "Fetch Organizaton Contacts",
+      "description": "Get Salesforce organization (account) and person (contact) contacts including the refrence to organization",
+      "type": "polling",
+      "main": "./lib/triggers/getOrganizationsAndContacts.js"
     }
   },
   "actions": {

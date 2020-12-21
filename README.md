@@ -92,6 +92,9 @@ This trigger will get all persons (contact's) from the associated Salesforce acc
 ### getOrganizations
 This trigger will get all organizations (account's) from the associated Salesforce account and pass them forward. By default it will only fetch the first 100000 entries.
 
+### getOrganizationsAndContacts
+This trigger will get all organizations (account's) and all persons (contact's including the reference to the organization / account) from the associated Salesforce account and pass them forward. By default it will only fetch the first 100000 entries of each type.
+
 
 ## Integrated Transformations
 
