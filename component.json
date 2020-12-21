@@ -15,16 +15,28 @@
   },
   "triggers": {
     "getContacts": {
-      "title": "Fetch Contacts",
-      "description": "Get Salesforce contacts",
+      "title": "Fetch Person Contacts",
+      "description": "Get Salesforce person (contact) contacts",
+      "type": "polling",
+      "main": "./lib/triggers/getContacts.js"
+    },
+    "getOrganizations": {
+      "title": "Fetch Organizaton Contacts",
+      "description": "Get Salesforce organization (account) contacts",
       "type": "polling",
       "main": "./lib/triggers/getContacts.js"
     }
   },
   "actions": {
     "upsertContact": {
-      "title": "Upsert a contact",
-      "description": "Upsert Salesforce contacts",
+      "title": "Upsert a person contact",
+      "description": "Upsert Salesforce person contacts (contact)",
+      "type": "polling",
+      "main": "./lib/actions/upsertContact.js"
+    },
+    "upsertOrganization": {
+      "title": "Upsert a organization contact",
+      "description": "Upsert Salesforce organization contacts (account)",
       "type": "polling",
       "main": "./lib/actions/upsertContact.js"
     }
