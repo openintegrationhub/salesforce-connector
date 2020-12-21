@@ -5,7 +5,7 @@ const { transform } = require('@openintegrationhub/ferryman');
 const { personFromOih } = require('../lib/transformations/personFromOih');
 const { personToOih } = require('../lib/transformations/personToOih');
 
-describe('Transformations', () => {
+describe('Person transformations', () => {
   it('should transform a full message into salesforce format', async () => {
     const msg = {
       data: {
@@ -307,7 +307,23 @@ describe('Transformations', () => {
           country: 'Othercountry',
           description: 'Other',
         }],
-        relations: [],
+        relations: [
+          {
+            label: 'Employee',
+            partner: {
+              name: '1',
+            },
+            type: 'PersonToOrganization',
+          },
+          {
+            label: 'Reports to',
+            partner: {
+              name: 'Mr.Boss',
+            },
+            type: 'PersonToPerson',
+          },
+
+        ],
       },
       metadata: { recordUid: '007' },
     };

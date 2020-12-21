@@ -9,8 +9,57 @@
 This connector transforms to and from the salesforce contact data model, using these fields:
 
 ```json
+contact:
 {
+  Id,
+  Name,
+  FirstName,
+  LastName,
+  Title,
+  Salutation,
+  PhotoUrl,
+  Department,
+  AccountId,
+  AccountName,
+  AssistentName,
+  CleanStatus,
+  ReportsToId,
+  Email,
+  Fax,
+  MobilePhone,
+  Phone,
+  AssistantPhone,
+  HomePhone,
+  OtherPhone,
+  MailingAddress,
+  OtherAddress,
+  Birthdate,
+  HasOptedOutOfFax,
+  HasOptedOutOfEmail,
+  DoNotCall,
+  LeadSource,
+}
+```
 
+```json
+account:
+{
+  Name,
+  AccountNumber,
+  AccountSource,
+  Site,
+  CleanStatus,
+  Industry: 'Oil',
+  DandbCompanyId,
+  DunsNumber,
+  Jigsaw,
+  Fax,
+  ShippingAddress.
+  BillingAddress,
+  Phone,
+  Website,
+  LastModifiedById,
+  ParentId,
 }
 ```
 
@@ -21,17 +70,28 @@ This connector transforms to and from the salesforce contact data model, using t
 3. Set contacts:read contacts:write addresses:read addresses:write
 4. Set register secret in secret service
 5. Add secret to flow step
+6. Add instanceUrl to flow step *
 
+\* The instanceUrl is provided from salesforce as return value from the oauth2 login. So you might want to extend the secret service to add the value to the flow step automatically.
+
+(The url might look like: https://your-salesforce-id.my.salesforce...)
 
 ## Actions
 
 ### upsertContact
-This action will upsert a contact in Salesforce. If an ID is supplied, the connector will attempt to update an existing contact with this ID. If no ID is provided a new entry will be created instead.
+This action will upsert a person (contact) in Salesforce. If an ID is supplied, the connector will attempt to update an existing contact with this ID. If no ID is provided a new entry will be created instead.
+
+### upsertOrganization
+This action will upsert a organization (account) in Salesforce. If an ID is supplied, the connector will attempt to update an existing contact with this ID. If no ID is provided a new entry will be created instead.
 
 ## Triggers
 
 ### getContacts
-This trigger will get all contacts from the associated Salesforce account and pass them forward. By default it will only fetch the first 100000 entries.
+This trigger will get all persons (contact's) from the associated Salesforce account and pass them forward. By default it will only fetch the first 100000 entries.
+
+### getOrganizations
+This trigger will get all organizations (account's) from the associated Salesforce account and pass them forward. By default it will only fetch the first 100000 entries.
+
 
 ## Integrated Transformations
 
