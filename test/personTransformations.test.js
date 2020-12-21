@@ -55,25 +55,25 @@ describe('Person transformations', () => {
         },
         ],
         categories: [{
-          name: '1',
+          label: '1',
           description: 'CleanStatus',
         },
         {
-          name: 'Newsletter',
+          label: 'Newsletter',
           description: 'LeadSource',
         },
         {
-          name: '0',
+          label: '0',
           description: 'HasOptedOutOfFax',
         },
         {
-          name: '0',
+          label: '0',
           description: 'HasOptedOutOfEmail',
         }, {
-          name: '0',
+          label: '0',
           description: 'DoNotCall',
         }, {
-          name: 'Account 1',
+          label: 'Account 1',
           description: 'AccountName',
         }],
         addresses: [{
@@ -269,25 +269,25 @@ describe('Person transformations', () => {
         },
         ],
         categories: [{
-          name: '1',
+          label: '1',
           description: 'CleanStatus',
         },
         {
-          name: 'Newsletter',
+          label: 'Newsletter',
           description: 'LeadSource',
         },
         {
-          name: '0',
+          label: '0',
           description: 'HasOptedOutOfFax',
         },
         {
-          name: '0',
+          label: '0',
           description: 'HasOptedOutOfEmail',
         }, {
-          name: '0',
+          label: '0',
           description: 'DoNotCall',
         }, {
-          name: 'Account 1',
+          label: 'Account 1',
           description: 'AccountName',
         }],
         addresses: [{

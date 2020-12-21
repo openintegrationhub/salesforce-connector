@@ -45,25 +45,25 @@ describe('Organization transformations', () => {
         },
         ],
         categories: [{
-          name: '1',
+          label: '1',
           description: 'CleanStatus',
         },
         {
-          name: 'Newsletter',
+          label: 'Newsletter',
           description: 'LeadSource',
         },
         {
-          name: '0',
+          label: '0',
           description: 'HasOptedOutOfFax',
         },
         {
-          name: '0',
+          label: '0',
           description: 'HasOptedOutOfEmail',
         }, {
-          name: '0',
+          label: '0',
           description: 'DoNotCall',
         }, {
-          name: 'Account 1',
+          label: 'Account 1',
           description: 'AccountName',
         }],
         addresses: [{
@@ -197,11 +197,11 @@ describe('Organization transformations', () => {
           { type: 'fax', value: '040123456', description: '' },
           { type: 'website', value: 'https://some.url', description: '' }],
         categories: [
-          { name: '1', description: 'CleanStatus' },
-          { name: 'Oil', description: 'Industry' },
-          { name: 'db123', description: 'D&B CompanyId' },
-          { name: 'duns123', description: 'D-U-N-S Number' },
-          { name: 'jigsaw123', description: 'Data.com Jigsaw' }],
+          { label: '1', description: 'CleanStatus' },
+          { label: 'Oil', description: 'Industry' },
+          { label: 'db123', description: 'D&B CompanyId' },
+          { label: 'duns123', description: 'D-U-N-S Number' },
+          { label: 'jigsaw123', description: 'Data.com Jigsaw' }],
         addresses: [{
           street: 'Shippingstreet',
           streetNumber: '2',
