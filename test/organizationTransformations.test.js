@@ -45,26 +45,20 @@ describe('Organization transformations', () => {
         },
         ],
         categories: [{
-          label: '1',
-          description: 'CleanStatus',
+          label: 'CleanStatus: 1',
         },
         {
-          label: 'Newsletter',
-          description: 'LeadSource',
+          label: 'LeadSource: Newsletter',
         },
         {
-          label: '0',
-          description: 'HasOptedOutOfFax',
+          label: 'HasOptedOutOfFax: 0',
         },
         {
-          label: '0',
-          description: 'HasOptedOutOfEmail',
+          label: 'HasOptedOutOfEmail: 0',
         }, {
-          label: '0',
-          description: 'DoNotCall',
+          label: 'DoNotCall: 0',
         }, {
-          label: 'Account 1',
-          description: 'AccountName',
+          label: 'AccountName: Account 1',
         }],
         addresses: [{
           street: 'Somestreet',
@@ -197,11 +191,11 @@ describe('Organization transformations', () => {
           { type: 'fax', value: '040123456', description: '' },
           { type: 'website', value: 'https://some.url', description: '' }],
         categories: [
-          { label: '1', description: 'CleanStatus' },
-          { label: 'Oil', description: 'Industry' },
-          { label: 'db123', description: 'D&B CompanyId' },
-          { label: 'duns123', description: 'D-U-N-S Number' },
-          { label: 'jigsaw123', description: 'Data.com Jigsaw' }],
+          { label: 'CleanStatus: 1' },
+          { label: 'Industry: Oil' },
+          { label: 'D&B CompanyId: db123' },
+          { label: 'D-U-N-S Number: duns123' },
+          { label: 'Data.com Jigsaw: jigsaw123' }],
         addresses: [{
           street: 'Shippingstreet',
           streetNumber: '2',

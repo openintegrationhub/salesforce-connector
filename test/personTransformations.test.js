@@ -55,26 +55,20 @@ describe('Person transformations', () => {
         },
         ],
         categories: [{
-          label: '1',
-          description: 'CleanStatus',
+          label: 'CleanStatus: 1',
         },
         {
-          label: 'Newsletter',
-          description: 'LeadSource',
+          label: 'LeadSource: Newsletter',
         },
         {
-          label: '0',
-          description: 'HasOptedOutOfFax',
+          label: 'HasOptedOutOfFax: 0',
         },
         {
-          label: '0',
-          description: 'HasOptedOutOfEmail',
+          label: 'HasOptedOutOfEmail: 0',
         }, {
-          label: '0',
-          description: 'DoNotCall',
+          label: 'DoNotCall: 0',
         }, {
-          label: 'Account 1',
-          description: 'AccountName',
+          label: 'AccountName: Account 1',
         }],
         addresses: [{
           street: 'Somestreet',
@@ -269,26 +263,20 @@ describe('Person transformations', () => {
         },
         ],
         categories: [{
-          label: '1',
-          description: 'CleanStatus',
+          label: 'CleanStatus: 1',
         },
         {
-          label: 'Newsletter',
-          description: 'LeadSource',
+          label: 'LeadSource: Newsletter',
         },
         {
-          label: '0',
-          description: 'HasOptedOutOfFax',
+          label: 'HasOptedOutOfFax: 0',
         },
         {
-          label: '0',
-          description: 'HasOptedOutOfEmail',
+          label: 'HasOptedOutOfEmail: 0',
         }, {
-          label: '0',
-          description: 'DoNotCall',
+          label: 'DoNotCall: 0',
         }, {
-          label: 'Account 1',
-          description: 'AccountName',
+          label: 'AccountName: Account 1',
         }],
         addresses: [{
           street: 'Somestreet',
