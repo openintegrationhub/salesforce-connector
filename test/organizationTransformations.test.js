@@ -229,7 +229,7 @@ describe('Organization transformations', () => {
             partner: {
               name: 'Umbrella Corp.',
             },
-            uids: ['333', 'Umbrella Corp.'],
+            uids: ['Umbrella Corp.'],
           },
         ],
       },

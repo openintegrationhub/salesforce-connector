@@ -302,7 +302,7 @@ describe('Person transformations', () => {
               name: '1',
             },
             type: 'PersonToOrganization',
-            uids: ['007', '1'],
+            uids: ['1'],
           },
           {
             label: 'Reports to',
@@ -310,7 +310,7 @@ describe('Person transformations', () => {
               name: 'Mr.Boss',
             },
             type: 'PersonToPerson',
-            uids: ['007', 'Mr.Boss'],
+            uids: ['Mr.Boss'],
           },
 
         ],
