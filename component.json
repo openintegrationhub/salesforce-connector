@@ -44,7 +44,7 @@
       "title": "Upsert a organization contact",
       "description": "Upsert Salesforce organization contacts (account)",
       "type": "polling",
-      "main": "./lib/actions/upsertContact.js"
+      "main": "./lib/actions/upsertOrganization.js"
     }
   }
 }
