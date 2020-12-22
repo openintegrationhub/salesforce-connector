@@ -298,7 +298,7 @@ describe('Person transformations', () => {
         relations: [
           {
             label: 'Employee',
-            type: 'PersonToOrganization',
+            type: 'OrganizationToPerson',
             uids: ['1'],
           },
           {
