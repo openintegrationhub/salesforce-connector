@@ -124,6 +124,7 @@ describe('Organization transformations', () => {
 
   it('should transform a full message into OIH format', async () => {
     const account = {
+      Id: '333',
       OwnerId: 'someOwner',
       Name: 'Joe\'s Oil Corp.',
       AccountNumber: 'accountNumber',
@@ -228,11 +229,11 @@ describe('Organization transformations', () => {
             partner: {
               name: 'Umbrella Corp.',
             },
-            uids: ['accountNumber', 'Umbrella Corp.'],
+            uids: ['333', 'Umbrella Corp.'],
           },
         ],
       },
-      metadata: { recordUid: 'accountNumber' },
+      metadata: { recordUid: '333' },
     };
 
     const response = transform(account, {}, organizationToOih);
