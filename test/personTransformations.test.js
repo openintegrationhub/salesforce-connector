@@ -298,17 +298,11 @@ describe('Person transformations', () => {
         relations: [
           {
             label: 'Employee',
-            partner: {
-              name: '1',
-            },
             type: 'PersonToOrganization',
             uids: ['1'],
           },
           {
             label: 'Reports to',
-            partner: {
-              name: 'Mr.Boss',
-            },
             type: 'PersonToPerson',
             uids: ['Mr.Boss'],
           },

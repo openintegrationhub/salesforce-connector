@@ -226,9 +226,6 @@ describe('Organization transformations', () => {
           {
             type: 'OrganizationToOrganization',
             label: 'Parent Company',
-            partner: {
-              name: 'Umbrella Corp.',
-            },
             uids: ['Umbrella Corp.'],
           },
         ],
