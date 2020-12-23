@@ -1,6 +1,6 @@
 {
   "name": "@openintegrationhub/salesforce-connector",
-  "version": "0.0.18",
+  "version": "0.0.19",
   "description": "OIH Connector for Salesforce",
   "homepage": "https://openintegrationhub.com/",
   "author": {
