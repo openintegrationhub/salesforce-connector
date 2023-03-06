@@ -1,0 +1,55 @@
+{
+   "type":"object",
+   "properties":{
+      "Authorization":{
+         "required":true,
+         "type":"string",
+         "example":"Bearer eyJhbGciOiJIUzUxMiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwczovL2FwaS5rZW5qby5pbyIsInN1YiI6IjYwZjBhOTE2MjE0OTg3MjU2YmU5YzhmZiIsImF1ZCI6Imh0dHBzOi8vYXBpLmtlbmpvLmlvIiwiaWF0IjoxNjI2Mzg1MTE1LCJuYmYiOjE2MjYzODUxMTUsImV4cCI6MTYyNjU1NzkxNSwiYWNjZXNzVHlwZSI6IkFwaUFjY2VzcyIsInNfb3JnSWQiOiI2MGYwNGVhN2RmN2JhMjFlY2U0YmYzYzIifQ.cxG_7dIS-VbmDXdJuLkekoyuyCIzQG2fMcgc0nkfbWE8cihhcb5FnALbQkjU9b5-qVcEoMHZlSuUA-jMEBMMVQ"
+      },
+      "requestBody":{
+         "type":"object",
+         "properties":{
+            "Name":{
+               "type":"string",
+               "description":"Name of the account"
+            },
+            "Email":{
+               "type":"string",
+               "description":"Email address of the account"
+            },
+            "Phone":{
+               "type":"string",
+               "description":"Phone number of the account"
+            },
+            "Fax":{
+               "type":"string",
+               "description":"Fax number of the account"
+            },
+            "Site":{
+               "type":"string",
+               "description":"Website address of the account"
+            },
+            "City":{
+               "type":"string",
+               "description":"City of the account"
+            },
+            "PostalCode":{
+               "type":"string",
+               "description":"Postal code of the account"
+            },
+            "State":{
+               "type":"string",
+               "description":"State of the account"
+            },
+            "Country":{
+               "type":"string",
+               "description":"Country of the account"
+            },
+            "Street":{
+               "type":"string",
+               "description":"Street address of the account"
+            }
+         }
+      }
+   }
+}

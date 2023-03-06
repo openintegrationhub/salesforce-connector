@@ -18,19 +18,21 @@
       "title": "Fetch Person Contacts",
       "description": "Get Salesforce person (contact) contacts",
       "type": "polling",
-      "main": "./lib/triggers/getContacts.js"
+      "main": "./lib/triggers/getContacts.js",
+      "metadata":{
+         "in":"./lib/schemas/getContacts.in.json",
+         "out":"./lib/schemas/getContacts.out.json"
+      }
     },
     "getOrganizations": {
       "title": "Fetch Organizaton Contacts",
       "description": "Get Salesforce organization (account) contacts",
       "type": "polling",
-      "main": "./lib/triggers/getOrganizations.js"
-    },
-    "getOrganizationsAndContacts": {
-      "title": "Fetch Organizaton Contacts",
-      "description": "Get Salesforce organization (account) and person (contact) contacts including the refrence to organization",
-      "type": "polling",
-      "main": "./lib/triggers/getOrganizationsAndContacts.js"
+      "main": "./lib/triggers/getOrganizations.js",
+      "metadata":{
+         "in":"./lib/schemas/getOrganizations.in.json",
+         "out":"./lib/schemas/getOrganizations.out.json"
+      }
     }
   },
   "actions": {
@@ -38,13 +40,21 @@
       "title": "Upsert a person contact",
       "description": "Upsert Salesforce person contacts (contact)",
       "type": "polling",
-      "main": "./lib/actions/upsertContact.js"
+      "main": "./lib/actions/upsertContact.js",
+      "metadata":{
+         "in":"./lib/schemas/upsertContact.in.json",
+         "out":"./lib/schemas/upsertContact.out.json"
+      }
     },
     "upsertOrganization": {
       "title": "Upsert a organization contact",
       "description": "Upsert Salesforce organization contacts (account)",
       "type": "polling",
-      "main": "./lib/actions/upsertOrganization.js"
+      "main": "./lib/actions/upsertOrganization.js",
+      "metadata":{
+         "in":"./lib/schemas/upsertOrganization.in.json",
+         "out":"./lib/schemas/upsertOrganization.out.json"
+      }
     }
   }
 }

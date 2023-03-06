@@ -1,0 +1,88 @@
+{
+   "type":"array",
+   "items":{
+      "type":"object",
+      "properties":{
+         "id":{
+            "type":"string",
+            "description":"The Salesforce contact id."
+         },
+         "FirstName":{
+            "type":"string",
+            "description":"First name of the contact"
+         },
+         "LastName":{
+            "type":"string",
+            "description":"Last name of the contact"
+         },
+         "Title":{
+            "type":"string",
+            "description":"Title of the contact"
+         },
+         "Salutation":{
+            "type":"string",
+            "description":"Salutation of the contact"
+         },
+         "Description":{
+            "type":"string",
+            "description":"Description of the contact"
+         },
+         "Email":{
+            "type":"string",
+            "description":"Email address of the contact"
+         },
+         "Phone":{
+            "type":"string",
+            "description":"Phone number of the contact"
+         },
+         "Fax":{
+            "type":"string",
+            "description":"Fax number of the contact"
+         },
+         "MobilePhone":{
+            "type":"string",
+            "description":"Mobile phone number of the contact"
+         },
+         "AssistantPhone":{
+            "type":"string",
+            "description":"Phone number of the contact's Assistant"
+         },
+         "HomePhone":{
+            "type":"string",
+            "description":"Home phone number of the contact"
+         },
+         "OtherPhone":{
+            "type":"string",
+            "description":"Other phone number of the contact"
+         },
+         "Birthdate":{
+            "type":"string",
+            "description":"Birthdate of the contact"
+         },
+         "City":{
+            "type":"string",
+            "description":"City of the contact"
+         },
+         "PostalCode":{
+            "type":"string",
+            "description":"Postal code of the contact"
+         },
+         "State":{
+            "type":"string",
+            "description":"State of the contact"
+         },
+         "Country":{
+            "type":"string",
+            "description":"Country of the contact"
+         },
+         "Street":{
+            "type":"string",
+            "description":"Street address of the contact"
+         },
+         "LastModifiedDate":{
+           "type":"string",
+           "description":"Date of last modification of this object"
+         }
+      }
+   }
+}
